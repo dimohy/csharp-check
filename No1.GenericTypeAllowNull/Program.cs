@@ -9,14 +9,13 @@ Print(i.Add("A", "B"));
 
 void Print(object? value, [CallerArgumentExpression("value")] string? argumentExpression = null)
 {
-    Console.WriteLine($"{argumentExpression}: {value}");
+    System.Console.WriteLine($"{argumentExpression}: {value}");
 }
 
 interface IAddable<T>
 {
     T? Add(T? a, T? b);
 }
-
 
 class TestClass : IAddable<int>, IAddable<int?>, IAddable<string>
 {
@@ -41,3 +40,21 @@ class TestClass : IAddable<int>, IAddable<int?>, IAddable<string>
         return a + b;
     }
 }
+
+//interface IAddable2<T>
+//{
+//    T Add(T a, T b);
+//}
+
+//class TestClass2 : IAddable2<string>, IAddable2<string?> // CS8645: 인터페이스 중복
+//{
+//    public string Add(string a, string b) // CS8767: 구현된 멤버와 일치하지 않음
+//    {
+//        throw new NotImplementedException();
+//    }
+
+//    public string? Add(string? a, string? b) // CS0111: 동일한 'Add' 멤버
+//    {
+//        throw new NotImplementedException();
+//    }
+//}
