@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Localizing", "4.Localizin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample", "WinForms\4.Localizing\sample\sample.csproj", "{D20B7269-37D7-4077-9CE9-DE9BD9B8AD70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No2.CS11_Check", "No2.CS11_Check\No2.CS11_Check.csproj", "{F81D556F-A7C5-4597-AA17-33F4ECC0AE54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{D20B7269-37D7-4077-9CE9-DE9BD9B8AD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D20B7269-37D7-4077-9CE9-DE9BD9B8AD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D20B7269-37D7-4077-9CE9-DE9BD9B8AD70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81D556F-A7C5-4597-AA17-33F4ECC0AE54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81D556F-A7C5-4597-AA17-33F4ECC0AE54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81D556F-A7C5-4597-AA17-33F4ECC0AE54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81D556F-A7C5-4597-AA17-33F4ECC0AE54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
