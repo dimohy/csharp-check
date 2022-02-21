@@ -1,15 +1,24 @@
-﻿// 문자열 보간에서 개행 허용
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 
-Console.WriteLine(nameof(Test_CS11_NewlinesInInterpolations));
-Test_CS11_NewlinesInInterpolations();
+// 문자열 보간에서 개행 허용
+//Console.WriteLine(nameof(Test_CS11_NewlinesInInterpolations));
+//Test_CS11_NewlinesInInterpolations();
 
 // 목록 패턴 매칭
-Test_CS11_ListPattern();
+//Console.WriteLine(nameof(Test_CS11_ListPattern));
+//Test_CS11_ListPattern();
 
 // 인자 널 체크 (!!)
-Test_CS11_ParameterNullChecking();
+//Console.WriteLine(nameof(Test_CS11_ParameterNullChecking));
+//Test_CS11_ParameterNullChecking();
 
+// 원시 문자열 리터럴
+//Console.WriteLine(nameof(Test_CS11_RawStringLiterals));
+//Test_CS11_RawStringLiterals();
+
+Console.WriteLine(nameof(Test_CS11_GenericAttribute));
+Test_CS11_GenericAttribute();
 
 void Test_CS11_NewlinesInInterpolations()
 {
@@ -57,4 +66,74 @@ void Test_CS11_ParameterNullChecking()
 void Print(object? value, [CallerArgumentExpression("value")] string? argumentExpression = null)
 {
     System.Console.WriteLine($"{argumentExpression}: {value}");
+}
+
+void Test_CS11_RawStringLiterals()
+{
+    var s1 = """
+a
+b
+c
+""";
+    Console.WriteLine(s1);
+    Console.WriteLine();
+
+    var s2 = """
+             a
+             b
+             c
+             """;
+
+    Console.WriteLine(s2);
+    Console.WriteLine();
+
+    var i = 1;
+    var s3 = $"""
+             {i++}
+             {i++}
+             {i++}
+             """;
+    Console.WriteLine(s3);
+}
+
+[Generic<string>("test")]
+[Generic<int>(25)]
+[TestGeneric<TestInfo>()]
+void Test_CS11_GenericAttribute()
+{
+    var attributesDataGroup = typeof(Program).GetRuntimeMethods().Select(x => x.GetCustomAttributesData());
+
+    foreach (var attributesData in attributesDataGroup)
+    {
+        foreach (var attributeData in attributesData)
+            if (attributeData.AttributeType.IsGenericType is true && attributeData.AttributeType.GetGenericTypeDefinition() == typeof(GenericAttribute<>))
+                Console.WriteLine(attributeData);
+    }
+}
+
+[AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
+class GenericAttribute<T> : Attribute
+{
+    T Value { get; }
+
+    public GenericAttribute(T value)
+    {
+        Value = value;
+    }
+}
+
+class TestGenericAttribute<T> : Attribute
+    where T : new()
+{
+    T Value { get; }
+
+    public TestGenericAttribute()
+    {
+        Value = new T();
+    }
+}
+
+class TestInfo
+{
+
 }
