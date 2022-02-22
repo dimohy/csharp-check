@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿#pragma warning disable CS8321 // 로컬 함수가 선언되었지만 사용되지 않음
+
+using System.Reflection;
 using System.Runtime.CompilerServices;
 
 // 문자열 보간에서 개행 허용
@@ -114,7 +116,7 @@ void Test_CS11_GenericAttribute()
 [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
 class GenericAttribute<T> : Attribute
 {
-    T Value { get; }
+    public T Value { get; }
 
     public GenericAttribute(T value)
     {
@@ -122,10 +124,11 @@ class GenericAttribute<T> : Attribute
     }
 }
 
+[AttributeUsage(AttributeTargets.All)]
 class TestGenericAttribute<T> : Attribute
     where T : new()
 {
-    T Value { get; }
+    public T Value { get; }
 
     public TestGenericAttribute()
     {

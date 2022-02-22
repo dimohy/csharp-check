@@ -47,6 +47,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Customizing", "5.Customiz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomizingControlSample", "WinForms\5.Customizing\CustomizingControlSample\CustomizingControlSample\CustomizingControlSample.csproj", "{BCD392AF-60DE-4696-A92A-A4B874BC253D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QnA", "QnA", "{3B5B84BC-77A3-4B15-A4BA-9F41E465A282}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetDevQnA", "DotnetDevQnA\DotnetDevQnA.csproj", "{E9C822AC-CA92-4BAD-878B-F81FBDC9CCA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +113,10 @@ Global
 		{BCD392AF-60DE-4696-A92A-A4B874BC253D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCD392AF-60DE-4696-A92A-A4B874BC253D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCD392AF-60DE-4696-A92A-A4B874BC253D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C822AC-CA92-4BAD-878B-F81FBDC9CCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C822AC-CA92-4BAD-878B-F81FBDC9CCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C822AC-CA92-4BAD-878B-F81FBDC9CCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C822AC-CA92-4BAD-878B-F81FBDC9CCA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,6 +141,7 @@ Global
 		{D20B7269-37D7-4077-9CE9-DE9BD9B8AD70} = {59D638C4-B812-4C41-988B-1D2404A7CD3E}
 		{D7B69A69-B075-43AE-AB2D-18D55AEA3678} = {975AF992-8235-4474-ACC8-BB2D2A9E244B}
 		{BCD392AF-60DE-4696-A92A-A4B874BC253D} = {D7B69A69-B075-43AE-AB2D-18D55AEA3678}
+		{E9C822AC-CA92-4BAD-878B-F81FBDC9CCA4} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F28AB9AC-2191-49A1-AFC9-9C79CCDDD84C}
