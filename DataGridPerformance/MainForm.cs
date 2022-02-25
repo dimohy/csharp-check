@@ -53,7 +53,7 @@ public partial class MainForm : Form
                 }
 
                 itemsGridView.Rows[rowIndex].Cells[columnIndex].Style.BackColor = Color.Red;
-                await Task.Delay(1000);
+                await Task.Delay(100);
                 itemsGridView.Rows[rowIndex].Cells[columnIndex].Style.BackColor = default;
             };
         };

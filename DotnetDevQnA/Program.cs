@@ -1,5 +1,24 @@
 ﻿#if true
 
+// var lines = File.ReadAllLines("text.txt");
+var lines = new string[]
+{
+    "A\tB\tC\tD\tE\t1",
+    "A\tB\tC\tD\tE\t2",
+    "A\tB\tC\tD\tE\t3",
+    "A\tB\tC\tD\tE\t4",
+    "A\tB\tC\tD\tE\t5",
+};
+
+var result = lines.Select(x => x.Split('\t').Last());
+foreach (var value in result)
+    Console.WriteLine(value);
+
+#endif
+
+
+#if false
+
 var groupList = new List<TextBoxGroup>
 {
     // 0
