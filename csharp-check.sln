@@ -53,7 +53,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetDevQnA", "DotnetDevQn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.DataGridPerformance", "6.DataGridPerformance", "{A138CE6E-3CD5-4078-89CE-1EA4981AED76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridPerformance", "DataGridPerformance\DataGridPerformance.csproj", "{B9A7FE6D-D66E-4451-8E45-BD5091B75346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGridPerformance", "DataGridPerformance\DataGridPerformance.csproj", "{B9A7FE6D-D66E-4451-8E45-BD5091B75346}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "No3.EnumGenerator", "No3.EnumGenerator", "{1679CD6A-3073-4839-B077-2E122489BD4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dimohysm.AutoGen", "No3.EnumGenerator\Dimohysm.AutoGen\Dimohysm.AutoGen.csproj", "{8C3375F3-F0FC-4A68-84A8-60F888AD131B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dimohysm.AutoGen.Test", "No3.EnumGenerator\Dimohysm.AutoGen.Test\Dimohysm.AutoGen.Test.csproj", "{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +131,14 @@ Global
 		{B9A7FE6D-D66E-4451-8E45-BD5091B75346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9A7FE6D-D66E-4451-8E45-BD5091B75346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9A7FE6D-D66E-4451-8E45-BD5091B75346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C3375F3-F0FC-4A68-84A8-60F888AD131B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C3375F3-F0FC-4A68-84A8-60F888AD131B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C3375F3-F0FC-4A68-84A8-60F888AD131B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C3375F3-F0FC-4A68-84A8-60F888AD131B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +166,8 @@ Global
 		{E9C822AC-CA92-4BAD-878B-F81FBDC9CCA4} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 		{A138CE6E-3CD5-4078-89CE-1EA4981AED76} = {975AF992-8235-4474-ACC8-BB2D2A9E244B}
 		{B9A7FE6D-D66E-4451-8E45-BD5091B75346} = {A138CE6E-3CD5-4078-89CE-1EA4981AED76}
+		{8C3375F3-F0FC-4A68-84A8-60F888AD131B} = {1679CD6A-3073-4839-B077-2E122489BD4B}
+		{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A} = {1679CD6A-3073-4839-B077-2E122489BD4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F28AB9AC-2191-49A1-AFC9-9C79CCDDD84C}
