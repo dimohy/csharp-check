@@ -3,8 +3,6 @@
 var w = WeekKind.월요일;
 Console.WriteLine(w.ToStringFast());
 
-
-
 [EnumExtensions]
 public enum WeekKind
 {

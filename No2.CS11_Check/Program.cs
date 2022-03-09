@@ -16,11 +16,11 @@ using System.Runtime.CompilerServices;
 //Test_CS11_ParameterNullChecking();
 
 // 원시 문자열 리터럴
-//Console.WriteLine(nameof(Test_CS11_RawStringLiterals));
-//Test_CS11_RawStringLiterals();
+Console.WriteLine(nameof(Test_CS11_RawStringLiterals));
+Test_CS11_RawStringLiterals();
 
-Console.WriteLine(nameof(Test_CS11_GenericAttribute));
-Test_CS11_GenericAttribute();
+//Console.WriteLine(nameof(Test_CS11_GenericAttribute));
+//Test_CS11_GenericAttribute();
 
 void Test_CS11_NewlinesInInterpolations()
 {
@@ -96,6 +96,31 @@ c
              {i++}
              """;
     Console.WriteLine(s3);
+
+    var s4 = $"""
+            (
+                {i++}
+                {i++}
+                {i++}
+            )
+            """;
+    Console.WriteLine(s4);
+
+    // 컴파일 오류
+    //var s5 = $"""
+    //  {{
+    //      why?
+    //  }}
+    //  """;
+    //Console.WriteLine(s5);
+
+    var s6 =
+$@"
+{{
+    {1} + {2} = {1 + 2}
+}}
+";
+    Console.WriteLine(s6);
 }
 
 [Generic<string>("test")]

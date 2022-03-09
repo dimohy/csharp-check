@@ -1,5 +1,24 @@
 ﻿#if true
 
+var v = new Test();
+// init 속성임에도 컴파일 오류는 나지 않음
+
+// init 속성이므로 초기화 이후 설정은 불가능. 컴파일 오류
+//v.Value = 123;
+
+v = new Test { Value = 12 };
+
+class Test
+{
+    public object Value { get; init; } = default!;
+}
+
+readonly record struct RecordStruct(int Value);
+
+#endif
+
+#if false
+
 // var lines = File.ReadAllLines("text.txt");
 var lines = new string[]
 {
