@@ -1,5 +1,28 @@
 ﻿#if true
 
+Console.WriteLine("!");
+
+Func<Task> funcAsync = () => Task.CompletedTask;
+await funcAsync();
+await funcAsync();
+
+Func<Task>? funcAsync2 = null;
+await (funcAsync2?.Invoke() ?? Task.CompletedTask);
+
+Func<Task>? funcAsync3 = null;
+await funcAsync3.InvokeAsync();
+
+public static class FuncTaskExtension
+{
+    public static Task InvokeAsync(this Func<Task>? @this) => @this?.Invoke() ?? Task.CompletedTask;
+}
+
+#endif
+
+
+
+#if false
+
 var v = new Test();
 // init 속성임에도 컴파일 오류는 나지 않음
 

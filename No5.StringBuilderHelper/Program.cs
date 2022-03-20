@@ -5,22 +5,28 @@ var nums = new[] { 1, 2, 3, 4, 5 };
 
 var result =
 $@"nums {{
-    {nums.Foreach((s, n) => s.Append($"{n}, "))}
+    {nums.Foreach(n => $"{n},")}
 }}";
 
 Console.WriteLine(result);
 
+var b = $"""""""""""""
+        a {'{'}
+        b """aaa"""
+        c 
+        """"""""""""";
+
+Console.WriteLine(b);
+
 
 public static class StringBuilderExtension
 {
-    public static StringBuilder Foreach<T>(this IEnumerable<T> enumerable, Action<StringBuilder, T> funcCallback)
+    public static StringBuilder Foreach<T>(this IEnumerable<T> enumerable, Func<T, string> funcCallback)
     {
         var result = new StringBuilder();
 
         foreach (var item in enumerable)
-        {
-            funcCallback?.Invoke(result, item);
-        }
+            result.Append(funcCallback?.Invoke(item));
 
         return result;
     }    
