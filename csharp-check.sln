@@ -71,7 +71,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No5.StringBuilderHelper", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfFileDownloader", "QnA\WpfFileDownloader\WpfFileDownloader.csproj", "{ACD1C500-FF39-41C9-8FF7-600549D9443B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontFamily", "FontFamily\FontFamily.csproj", "{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontFamily", "QnA\FontFamily\FontFamily.csproj", "{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
