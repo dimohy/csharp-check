@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--<FontFamily x:Key="Font1">/FontFamily;Component/#MaruBuri Regular</FontFamily>
+    <FontFamily x:Key="Font2">/FontFamily;Component/#MaruBuri Light</FontFamily>-->
+
+    <FontFamily x:Key="Font1">pack://application:,,,/resources/#MaruBuri Regular</FontFamily>
+    <FontFamily x:Key="Font2">pack://application:,,,/resources/#MaruBuri Light</FontFamily>
+</ResourceDictionary>

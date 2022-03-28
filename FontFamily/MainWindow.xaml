@@ -1,0 +1,16 @@
+﻿<Window
+    x:Class="FontFamily.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FontFamily"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Vertical">
+        <Label FontFamily="{StaticResource Font1}" FontSize="40">테스트 입니다.</Label>
+        <Label FontFamily="{StaticResource Font2}" FontSize="40">테스트 입니다.</Label>
+    </StackPanel>
+</Window>

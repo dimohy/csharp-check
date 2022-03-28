@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\MaruBuri-Bold.ttf" />
+    <Resource Include="resources\MaruBuri-ExtraLight.ttf" />
+    <Resource Include="resources\MaruBuri-Light.ttf" />
+    <Resource Include="resources\MaruBuri-Regular.ttf" />
+    <Resource Include="resources\MaruBuri-SemiBold.ttf" />
+  </ItemGroup>
+
+</Project>

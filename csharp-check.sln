@@ -69,7 +69,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No4.TaskCompletionSource", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No5.StringBuilderHelper", "No5.StringBuilderHelper\No5.StringBuilderHelper.csproj", "{949A463D-A30B-4996-B526-8BDCAE43858E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFileDownloader", "QnA\WpfFileDownloader\WpfFileDownloader.csproj", "{ACD1C500-FF39-41C9-8FF7-600549D9443B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfFileDownloader", "QnA\WpfFileDownloader\WpfFileDownloader.csproj", "{ACD1C500-FF39-41C9-8FF7-600549D9443B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontFamily", "FontFamily\FontFamily.csproj", "{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +171,10 @@ Global
 		{ACD1C500-FF39-41C9-8FF7-600549D9443B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACD1C500-FF39-41C9-8FF7-600549D9443B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACD1C500-FF39-41C9-8FF7-600549D9443B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,6 +207,7 @@ Global
 		{5008F1D6-D6BE-49D5-A86E-AEE49CAA9C91} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 		{5A837C2F-E133-46CE-B30E-29E941F70979} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 		{ACD1C500-FF39-41C9-8FF7-600549D9443B} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
+		{BDEEA9CC-323E-4247-947D-B5DA504EF2B0} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F28AB9AC-2191-49A1-AFC9-9C79CCDDD84C}
