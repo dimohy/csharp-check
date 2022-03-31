@@ -8,11 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Program.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Program.cs" />
+    <PackageReference Include="Stowage" Version="1.1.6" />
   </ItemGroup>
 
 </Project>
