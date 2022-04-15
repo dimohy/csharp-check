@@ -7,14 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Program.cs" />
-    <Compile Remove="RecursiveTest.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Program.cs" />
-    <None Include="RecursiveTest.cs" />
-  </ItemGroup>
-
 </Project>

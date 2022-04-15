@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "No8.WinUI3PhotoViewer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "No8.WinUI3PhotoViewer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
