@@ -1,10 +1,7 @@
 ﻿using Microsoft.UI.Xaml;
 
-using Windows.Win32.Foundation;
-using Windows.Win32;
-using Windows.Win32.UI.WindowsAndMessaging;
+using System;
 using System.Runtime.InteropServices;
-using Windows.Win32.UI.Shell;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -16,6 +13,16 @@ namespace App53
     /// </summary>
     public partial class App : Application
     {
+        public delegate int SUBCLASSPROC(IntPtr hWnd, uint uMsg, IntPtr wParam, IntPtr lParam, IntPtr uIdSubclass, uint dwRefData);
+
+        [DllImport("Comctl32.dll", SetLastError = true)]
+        public static extern bool SetWindowSubclass(IntPtr hWnd, SUBCLASSPROC pfnSubclass, uint uIdSubclass, uint dwRefData);
+
+        [DllImport("Comctl32.dll", SetLastError = true)]
+        public static extern int DefSubclassProc(IntPtr hWnd, uint uMsg, IntPtr wParam, IntPtr lParam);
+
+        public const int WM_CLOSE = 0x0010;
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -41,22 +48,22 @@ namespace App53
             //_prevWndFunc = Marshal.GetDelegateForFunctionPointer<WNDPROC>(prevWndFunc);
 
             var wndProcFunc = new SUBCLASSPROC(WinProc);
-            PInvoke.SetWindowSubclass((HWND)hwnd, wndProcFunc, 0, 0);
+            SetWindowSubclass(hwnd, wndProcFunc, 0, 0);
 
             m_window.Activate();
         }
 
         private Window m_window;
-        private WNDPROC _prevWndFunc;
+        //private WNDPROC _prevWndFunc;
 
-        private LRESULT WinProc(HWND hwnd, uint msg, WPARAM wParam, LPARAM lParam)
-        {
-            return PInvoke.CallWindowProc(_prevWndFunc, hwnd, msg, wParam, lParam);
-        }
+        //private LRESULT WinProc(HWND hwnd, uint msg, WPARAM wParam, LPARAM lParam)
+        //{
+        //    return PInvoke.CallWindowProc(_prevWndFunc, hwnd, msg, wParam, lParam);
+        //}
 
-        private LRESULT WinProc(HWND hwnd, uint uMsg, WPARAM wParam, LPARAM lParam, nuint uIdSubclass, nuint dwRefData)
+        private int WinProc(IntPtr hwnd, uint uMsg, IntPtr wParam, IntPtr lParam, IntPtr uIdSubclass, uint dwRefData)
         {
-            return PInvoke.DefSubclassProc(hwnd, uMsg, wParam, lParam);
+            return DefSubclassProc(hwnd, uMsg, wParam, lParam);
         }
 
     }
