@@ -4,6 +4,7 @@ using Windows.Win32.Foundation;
 using Windows.Win32;
 using Windows.Win32.UI.WindowsAndMessaging;
 using System.Runtime.InteropServices;
+using Windows.Win32.UI.Shell;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -35,9 +36,12 @@ namespace App53
 
             var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(m_window);
 
-            var wndProcFunc = new WNDPROC(WinProc);
-            var prevWndFunc = PInvoke.SetWindowLongPtr((HWND)hwnd, WINDOW_LONG_PTR_INDEX.GWL_WNDPROC, Marshal.GetFunctionPointerForDelegate(wndProcFunc));
-            _prevWndFunc = Marshal.GetDelegateForFunctionPointer<WNDPROC>(prevWndFunc);
+            //var wndProcFunc = new WNDPROC(WinProc);
+            //var prevWndFunc = PInvoke.SetWindowLongPtr((HWND)hwnd, WINDOW_LONG_PTR_INDEX.GWL_WNDPROC, Marshal.GetFunctionPointerForDelegate(wndProcFunc));
+            //_prevWndFunc = Marshal.GetDelegateForFunctionPointer<WNDPROC>(prevWndFunc);
+
+            var wndProcFunc = new SUBCLASSPROC(WinProc);
+            PInvoke.SetWindowSubclass((HWND)hwnd, wndProcFunc, 0, 0);
 
             m_window.Activate();
         }
@@ -49,5 +53,11 @@ namespace App53
         {
             return PInvoke.CallWindowProc(_prevWndFunc, hwnd, msg, wParam, lParam);
         }
+
+        private LRESULT WinProc(HWND hwnd, uint uMsg, WPARAM wParam, LPARAM lParam, nuint uIdSubclass, nuint dwRefData)
+        {
+            return PInvoke.DefSubclassProc(hwnd, uMsg, wParam, lParam);
+        }
+
     }
 }

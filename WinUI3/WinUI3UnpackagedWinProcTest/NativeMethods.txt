@@ -1,2 +1,4 @@
 ﻿CallWindowProc
 SetWindowLongPtr
+SetWindowSubclass
+DefSubclassProc
