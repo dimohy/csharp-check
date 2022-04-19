@@ -60,7 +60,7 @@ namespace App53
         //{
         //    return PInvoke.CallWindowProc(_prevWndFunc, hwnd, msg, wParam, lParam);
         //}
-
+        
         private int WinProc(IntPtr hwnd, uint uMsg, IntPtr wParam, IntPtr lParam, IntPtr uIdSubclass, uint dwRefData)
         {
             return DefSubclassProc(hwnd, uMsg, wParam, lParam);

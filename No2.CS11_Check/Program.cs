@@ -16,11 +16,24 @@ using System.Runtime.CompilerServices;
 //Test_CS11_ParameterNullChecking();
 
 // 원시 문자열 리터럴
-Console.WriteLine(nameof(Test_CS11_RawStringLiterals));
-Test_CS11_RawStringLiterals();
+//Console.WriteLine(nameof(Test_CS11_RawStringLiterals));
+//Test_CS11_RawStringLiterals();
 
 //Console.WriteLine(nameof(Test_CS11_GenericAttribute));
 //Test_CS11_GenericAttribute();
+
+// ReadOnlySpan<char>에 대한 switch 패턴 매칭
+
+//void Test_CS11_ReadOnlySpanWithSwitch()
+//{
+//    var str = "Top";
+//    var span = str.AsSpan();
+//    switch (span)
+//    {
+//        case "Left":
+//            break;
+//    }
+//}
 
 void Test_CS11_NewlinesInInterpolations()
 {

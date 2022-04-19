@@ -1,0 +1,25 @@
+﻿<Window
+    x:Class="WpfTabItemHidden.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfTabItemHidden"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <TabControl x:Name="tab">
+            <TabItem x:Name="lodingTabHeader" Header="Loading">
+                <TextBlock x:Name="lodingLabel" />
+            </TabItem>
+            <TabItem
+                x:Name="tab1"
+                Header="Tab#1"
+                IsEnabled="False" />
+            <TabItem Header="Tab#2" IsEnabled="False" />
+            <TabItem Header="Tab#3" IsEnabled="False" />
+        </TabControl>
+    </Grid>
+</Window>
