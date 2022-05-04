@@ -4,6 +4,9 @@ using MudBlazor;
 using Microsoft.AspNetCore.Components;
 using System.Text;
 using System.Xml.Linq;
+using System.Text.Json;
+using System.Collections.Immutable;
+using System.Reflection;
 
 namespace No9.CSharpCodeRunner.Client.Pages
 {
@@ -30,14 +33,13 @@ namespace No9.CSharpCodeRunner.Client.Pages
         private string sourceText = "";
         private string? outputText;
 
-        private void RunCSharpSource()
+        private async Task RunCSharpCode()
         {
-            outputText = RunCSharpSource(sourceText);
+            outputText = await RunCSharpCodeAsync(sourceText);
         }
 
         protected override async Task OnInitializedAsync()
         {
-            //var refs = AppDomain.CurrentDomain.GetAssemblies();
             var client = new HttpClient
             {
                 BaseAddress = new Uri(navigationManager.BaseUri)
@@ -45,23 +47,16 @@ namespace No9.CSharpCodeRunner.Client.Pages
 
             var references = new List<MetadataReference>();
 
-//foreach (var reference in refs.Where(x => !x.IsDynamic && !string.IsNullOrWhiteSpace(x.Modules.First().Name)))
-//{
-//    try
-//    {
-//        var name = reference.Modules.First().Name;
-//        var stream = await client.GetStreamAsync($"_framework/{name}");
-//        references.Add(MetadataReference.CreateFromStream(stream));
-//    }
-//    catch (Exception)
-//    {
-//    }
-//}
-            foreach (var name in usings)
+            var refsUri = "_framework/blazor.boot.json";
+            var blazorBootJson = await client.GetStringAsync(refsUri);
+            var dom = JsonDocument.Parse(blazorBootJson);
+            var assemblies = dom.RootElement.GetProperty("resources").GetProperty("assembly").EnumerateObject();
+            foreach (var assemblyInfo in assemblies)
             {
+                var name = assemblyInfo.Name;
                 try
                 {
-                    var stream = await client.GetStreamAsync($"_framework/{name}.dll");
+                    var stream = await client.GetStreamAsync($"_framework/{name}");
                     references.Add(MetadataReference.CreateFromStream(stream));
                 }
                 catch
@@ -72,32 +67,49 @@ namespace No9.CSharpCodeRunner.Client.Pages
             _references = references;
         }
 
-        private string? RunCSharpSource(string source)
+        private async Task<string?> RunCSharpCodeAsync(string code)
         {
-            var scriptCompilation = CSharpCompilation.CreateScriptCompilation(
-                Path.GetRandomFileName(),
-                CSharpSyntaxTree.ParseText(source,
-                CSharpParseOptions.Default.WithKind(SourceCodeKind.Script).WithLanguageVersion(LanguageVersion.Preview)),
-                _references,
-                new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary, usings: usings),
-                _previousCompilation
-            );
-
-            using var ms = new MemoryStream();
-            var emitResult = scriptCompilation.Emit(ms);
-            if (emitResult.Success is true)
+            var result = await Task.Run(async () =>
             {
-                _previousCompilation = scriptCompilation;
-                return "";
-            }
+                var scriptCompilation = CSharpCompilation.CreateScriptCompilation(
+                    Path.GetRandomFileName(),
+                    CSharpSyntaxTree.ParseText(code,
+                    CSharpParseOptions.Default.WithKind(SourceCodeKind.Script).WithLanguageVersion(LanguageVersion.Preview)),
+                    _references,
+                    new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary, usings: usings),
+                    _previousCompilation
+                );
 
-            var sb = new StringBuilder();
-            foreach (var diagnostic in emitResult.Diagnostics)
-            {
-                sb.AppendLine(diagnostic.ToString());
-            }
+                using var ms = new MemoryStream();
+                var emitResult = scriptCompilation.Emit(ms);
+                if (emitResult.Success is true)
+                {
+                    _previousCompilation = scriptCompilation;
+                    var assembly = Assembly.Load(ms.ToArray());
 
-            return sb.ToString();
+                    using var writer = new StringWriter();
+                    Console.SetOut(writer);
+                    var entryPoint = _previousCompilation.GetEntryPoint(CancellationToken.None);
+                    var type = assembly.GetType($"{entryPoint!.ContainingNamespace.MetadataName}.{entryPoint.ContainingType.MetadataName}");
+                    var entryPointMethod = type!.GetMethod(entryPoint.MetadataName);
+
+                    var submission = (Func<object[], Task>)entryPointMethod!.CreateDelegate(typeof(Func<object[], Task>));
+                    var submissionStates = new object[] { null!, null! };
+                    await submission(submissionStates);
+
+                    return writer.ToString();
+                }
+
+                var sb = new StringBuilder();
+                foreach (var diagnostic in emitResult.Diagnostics)
+                {
+                    sb.AppendLine(diagnostic.ToString());
+                }
+
+                return sb.ToString();
+            });
+
+            return result;
         }
     }
 }

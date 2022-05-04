@@ -35,6 +35,12 @@ using System.Runtime.CompilerServices;
 //    }
 //}
 
+short a = 32767;
+a++;
+var result = (ushort)(a << 1);
+Console.WriteLine(Convert.ToString(a, 2));
+Console.WriteLine(Convert.ToString(result, 2));
+
 void Test_CS11_NewlinesInInterpolations()
 {
     var result = $"{
