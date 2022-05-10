@@ -103,7 +103,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No10.MQTTnetTest", "No10.MQ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCaptureScreen", "QnA\WpfCaptureScreen\WpfCaptureScreen.csproj", "{B924575F-4181-451A-81DB-FFA7AA9FC194}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsMouseCapture", "QnA\WinFormsMouseCapture\WinFormsMouseCapture.csproj", "{71B412D9-C88A-42D7-BF7C-43E79600F1C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsMouseCapture", "QnA\WinFormsMouseCapture\WinFormsMouseCapture.csproj", "{71B412D9-C88A-42D7-BF7C-43E79600F1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No11.ExpandoObject", "No11.ExpandoObject\No11.ExpandoObject.csproj", "{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No12.WpfBindingExpandoObject", "No12.WpfBindingExpandoObject\No12.WpfBindingExpandoObject.csproj", "{B850E774-2C4B-4AF0-889D-C12614B354D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -734,6 +738,38 @@ Global
 		{71B412D9-C88A-42D7-BF7C-43E79600F1C4}.Release|x64.Build.0 = Release|Any CPU
 		{71B412D9-C88A-42D7-BF7C-43E79600F1C4}.Release|x86.ActiveCfg = Release|Any CPU
 		{71B412D9-C88A-42D7-BF7C-43E79600F1C4}.Release|x86.Build.0 = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|arm64.Build.0 = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|x64.Build.0 = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Debug|x86.Build.0 = Debug|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|arm64.ActiveCfg = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|arm64.Build.0 = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|x64.Build.0 = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|x86.ActiveCfg = Release|Any CPU
+		{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}.Release|x86.Build.0 = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|arm64.Build.0 = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Debug|x86.Build.0 = Debug|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|arm64.ActiveCfg = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|arm64.Build.0 = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|x64.Build.0 = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

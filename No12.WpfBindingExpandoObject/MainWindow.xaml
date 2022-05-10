@@ -1,0 +1,42 @@
+﻿<Window
+    x:Class="No12.WpfBindingExpandoObject.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:No12.WpfBindingExpandoObject"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Width="80">Name</Label>
+                <TextBox Width="120" Text="{Binding UserInfo.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="80">Age</Label>
+                <TextBox Width="80" Text="{Binding UserInfo.Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <Slider
+                    Width="200"
+                    Margin="8,0,0,0"
+                    VerticalAlignment="Center"
+                    IsSnapToTickEnabled="True"
+                    Maximum="100"
+                    Minimum="1"
+                    TickFrequency="1"
+                    Value="{Binding UserInfo.Age, Mode=TwoWay}" />
+            </StackPanel>
+            <Label>Output</Label>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="80">Name</Label>
+                <Label Content="{Binding UserInfo.Name, Mode=OneWay}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="80">Age</Label>
+                <Label Content="{Binding UserInfo.Age, Mode=OneWay}" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
