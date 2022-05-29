@@ -105,9 +105,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCaptureScreen", "QnA\Wpf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsMouseCapture", "QnA\WinFormsMouseCapture\WinFormsMouseCapture.csproj", "{71B412D9-C88A-42D7-BF7C-43E79600F1C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No11.ExpandoObject", "No11.ExpandoObject\No11.ExpandoObject.csproj", "{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No11.ExpandoObject", "No11.ExpandoObject\No11.ExpandoObject.csproj", "{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No12.WpfBindingExpandoObject", "No12.WpfBindingExpandoObject\No12.WpfBindingExpandoObject.csproj", "{B850E774-2C4B-4AF0-889D-C12614B354D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No12.WpfBindingExpandoObject", "No12.WpfBindingExpandoObject\No12.WpfBindingExpandoObject.csproj", "{B850E774-2C4B-4AF0-889D-C12614B354D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfComboBoxBinding", "QnA\WpfComboBoxBinding\WpfComboBoxBinding.csproj", "{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -770,6 +772,22 @@ Global
 		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|x64.Build.0 = Release|Any CPU
 		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|x86.ActiveCfg = Release|Any CPU
 		{B850E774-2C4B-4AF0-889D-C12614B354D7}.Release|x86.Build.0 = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|arm64.Build.0 = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|x64.Build.0 = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Debug|x86.Build.0 = Debug|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|arm64.ActiveCfg = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|arm64.Build.0 = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|x64.ActiveCfg = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|x64.Build.0 = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|x86.ActiveCfg = Release|Any CPU
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -813,6 +831,7 @@ Global
 		{5D5C64E2-1930-4206-AB11-15438C4D1735} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 		{B924575F-4181-451A-81DB-FFA7AA9FC194} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 		{71B412D9-C88A-42D7-BF7C-43E79600F1C4} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
+		{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F28AB9AC-2191-49A1-AFC9-9C79CCDDD84C}

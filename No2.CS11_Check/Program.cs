@@ -35,11 +35,63 @@ using System.Runtime.CompilerServices;
 //    }
 //}
 
-short a = 32767;
-a++;
-var result = (ushort)(a << 1);
-Console.WriteLine(Convert.ToString(a, 2));
-Console.WriteLine(Convert.ToString(result, 2));
+//Test_CS11_UnsignedRightShift();
+
+//Test_CS11_UTF8_Literals();
+
+Test_CS11_SwitchingReadOnlySpan();
+
+void Test_CS11_SwitchingReadOnlySpan()
+{
+    ReadOnlySpan<char> span = "Test";
+
+    switch (span)
+    {
+        case "Test":
+            Console.WriteLine("Hit!");
+            break;
+        default:
+            Console.WriteLine("No hit");
+            break;
+    }
+}
+
+void Test_CS11_UnsignedRightShift()
+{
+    short a = -1;
+    var b = a >>> 1;
+    var c = a >> 1;
+    Console.WriteLine(b);
+    Console.WriteLine(c);
+}
+
+void Test_CS11_UTF8_Literals()
+{
+    var s1 = "테스트"u8;
+
+    byte[] s2 = "테스트";
+
+    Span<byte> s3 = "테스트";
+
+    ReadOnlySpan<byte> s4 = "테스트";
+
+    Print(s1);
+    Print(s2);
+    Print(s3.ToArray());
+    Print(s4.ToArray());
+
+    void Print(byte[] data)
+    {
+        var output = BitConverter.ToString(data);
+        Console.WriteLine(output);
+    }
+}
+
+//short a = 32767;
+//a++;
+//var result = (ushort)(a << 1);
+//Console.WriteLine(Convert.ToString(a, 2));
+//Console.WriteLine(Convert.ToString(result, 2));
 
 void Test_CS11_NewlinesInInterpolations()
 {
@@ -183,4 +235,9 @@ class TestGenericAttribute<T> : Attribute
 class TestInfo
 {
 
+}
+
+struct S
+{
+    public int X, Y;
 }

@@ -1,0 +1,30 @@
+﻿<Window
+    x:Class="WpfComboBoxBinding.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfComboBoxBinding"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="window"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <ComboBox
+            Width="120"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            ItemsSource="{Binding Items, Mode=OneWay}"
+            SelectedItem="{Binding SelectedItem}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <Run Text="{Binding DataContext.ItemKind, ElementName=window, Mode=OneWay}" />
+                        <Run Text="{Binding Text, Mode=OneWay}" />
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+    </Grid>
+</Window>

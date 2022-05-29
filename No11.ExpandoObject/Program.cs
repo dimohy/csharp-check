@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using No11.ExpandoObject;
+
+using System.ComponentModel;
 using System.Dynamic;
 
 dynamic p = new ExpandoObject();
@@ -23,3 +25,17 @@ foreach (var kv in p)
 {
     Console.WriteLine(kv);
 }
+
+p.PrintProperties = new Action(() =>
+{
+    foreach (var kv in p)
+    {
+        Console.WriteLine(kv);
+    }
+});
+
+p.PrintProperties();
+
+dynamic c = new CustomDynamicMetaObject();
+c.Name = "James";
+//Console.WriteLine(c.Name);
