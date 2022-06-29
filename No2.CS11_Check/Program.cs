@@ -1,5 +1,6 @@
 ﻿#pragma warning disable CS8321 // 로컬 함수가 선언되었지만 사용되지 않음
 
+using System.ComponentModel;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
@@ -39,7 +40,34 @@ using System.Runtime.CompilerServices;
 
 //Test_CS11_UTF8_Literals();
 
-Test_CS11_SwitchingReadOnlySpan();
+//Test_CS11_SwitchingReadOnlySpan();
+
+//Test_CS11_DIMforStaticMembers();
+
+Test_CS11_Required();
+
+void Test_CS11_Required()
+{
+    var a = new RequiredTestInfo
+    {
+        Name = "dimohy"
+    };
+}
+
+void Test_CS11_MethodParameterNamesInnameof()
+{
+    [Description(nameof(name))]
+    void Call(string name)
+    {
+        
+    }
+}
+
+
+void Test_CS11_DIMforStaticMembers()
+{
+    var a = TestInfo.Create();
+}
 
 void Test_CS11_SwitchingReadOnlySpan()
 {
@@ -65,27 +93,27 @@ void Test_CS11_UnsignedRightShift()
     Console.WriteLine(c);
 }
 
-void Test_CS11_UTF8_Literals()
-{
-    var s1 = "테스트"u8;
+//void Test_CS11_UTF8_Literals()
+//{
+//    var s1 = "테스트"u8;
 
-    byte[] s2 = "테스트";
+//    byte[] s2 = "테스트";
 
-    Span<byte> s3 = "테스트";
+//    Span<byte> s3 = "테스트";
 
-    ReadOnlySpan<byte> s4 = "테스트";
+//    ReadOnlySpan<byte> s4 = "테스트";
 
-    Print(s1);
-    Print(s2);
-    Print(s3.ToArray());
-    Print(s4.ToArray());
+//    Print(s1);
+//    Print(s2);
+//    Print(s3.ToArray());
+//    Print(s4.ToArray());
 
-    void Print(byte[] data)
-    {
-        var output = BitConverter.ToString(data);
-        Console.WriteLine(output);
-    }
-}
+//    void Print(byte[] data)
+//    {
+//        var output = BitConverter.ToString(data);
+//        Console.WriteLine(output);
+//    }
+//}
 
 //short a = 32767;
 //a++;
@@ -125,16 +153,16 @@ void Test_CS11_ListPattern()
     Print(list2 is [1, .., var y, 5] && y is 7);
 }
 
-void Test_CS11_ParameterNullChecking()
-{
-    Method("a", "b", "c");
-    Method(null!, "b", "c");
+//void Test_CS11_ParameterNullChecking()
+//{
+//    Method("a", "b", "c");
+//    Method(null!, "b", "c");
 
-    void Method(string a!!, string b!!, string c!!)
-    {
-        Console.WriteLine("정상동작");
-    }
-}
+//    void Method(string a!!, string b!!, string c!!)
+//    {
+//        Console.WriteLine("정상동작");
+//    }
+//}
 
 void Print(object? value, [CallerArgumentExpression("value")] string? argumentExpression = null)
 {
@@ -232,12 +260,26 @@ class TestGenericAttribute<T> : Attribute
     }
 }
 
-class TestInfo
+interface IFactory<T>
 {
+    static abstract T Create();
+}
 
+class TestInfo : IFactory<TestInfo>
+{
+    public static TestInfo Create()
+    {
+        return new TestInfo();
+    }
 }
 
 struct S
 {
     public int X, Y;
 }
+
+class RequiredTestInfo
+{
+    public required string Name { get; init; }
+}
+
