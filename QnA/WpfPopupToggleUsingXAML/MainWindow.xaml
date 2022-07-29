@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
     xmlns:local="clr-namespace:WpfPopupToggleUsingXAML"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
@@ -13,17 +14,14 @@
         <TabControl>
             <TabItem Header="Tab1">
                 <Button Content="Button!">
-                    <Button.Triggers>
-                        <EventTrigger RoutedEvent="Button.Click">
-                            <BeginStoryboard>
-                                <Storyboard>
-                                    <BooleanAnimationUsingKeyFrames Storyboard.TargetName="popUp" Storyboard.TargetProperty="(Popup.IsOpen)">
-                                        <DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="True" />
-                                    </BooleanAnimationUsingKeyFrames>
-                                </Storyboard>
-                            </BeginStoryboard>
-                        </EventTrigger>
-                    </Button.Triggers>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:ChangePropertyAction
+                                PropertyName="IsOpen"
+                                TargetName="popUp"
+                                Value="True" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
                 </Button>
             </TabItem>
         </TabControl>
@@ -35,17 +33,14 @@
             IsOpen="False"
             Placement="MousePoint">
             <Button Content="Close!">
-                <Button.Triggers>
-                    <EventTrigger RoutedEvent="Button.Click">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <BooleanAnimationUsingKeyFrames Storyboard.TargetName="popUp" Storyboard.TargetProperty="(Popup.IsOpen)">
-                                    <DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="false" />
-                                </BooleanAnimationUsingKeyFrames>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </Button.Triggers>
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:ChangePropertyAction
+                            PropertyName="IsOpen"
+                            TargetName="popUp"
+                            Value="False" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
             </Button>
 
         </Popup>
