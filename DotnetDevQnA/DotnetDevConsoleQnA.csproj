@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Program.cs" />
+    <Compile Remove="ConsoleMultiIntegerInput.cs" />
     <Compile Remove="RecursiveTest.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Program.cs" />
+    <None Include="ConsoleMultiIntegerInput.cs" />
     <None Include="RecursiveTest.cs" />
   </ItemGroup>
 

@@ -1,5 +1,24 @@
 ﻿#if true
 
+var aa = new MySum();
+Console.WriteLine(aa.C);
+
+class MySum
+{
+    private int _a = 8;
+    private int _b = 10;
+    public int C => _a + _b;
+}
+
+
+
+#endif
+
+
+
+
+#if false
+
 Console.WriteLine("!");
 
 Func<Task> funcAsync = () => Task.CompletedTask;
