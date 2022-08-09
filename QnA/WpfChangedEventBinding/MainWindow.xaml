@@ -1,0 +1,26 @@
+﻿<Window
+    x:Class="WpfChangedEventBinding.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfChangedEventBinding"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel
+            Width="200"
+            VerticalAlignment="Center"
+            Orientation="Vertical">
+            <TextBox
+                x:Name="textBox"
+                SourceUpdated="textBox_Updated"
+                TargetUpdated="textBox_Updated"
+                Text="{Binding Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" />
+            <Button x:Name="changeTextButton" Click="changeTextButton_Click">ViewModel에서 변경</Button>
+            <Label x:Name="message" />
+        </StackPanel>
+    </Grid>
+</Window>
