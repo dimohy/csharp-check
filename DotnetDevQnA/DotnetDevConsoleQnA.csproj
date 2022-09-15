@@ -13,6 +13,7 @@
     <Compile Remove="Program.cs" />
     <Compile Remove="QueuePerformanceTest.cs" />
     <Compile Remove="RecursiveTest.cs" />
+    <Compile Remove="StackMemoryAddress.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,7 @@
     <None Include="Program.cs" />
     <None Include="QueuePerformanceTest.cs" />
     <None Include="RecursiveTest.cs" />
+    <None Include="StackMemoryAddress.cs" />
   </ItemGroup>
 
 </Project>
