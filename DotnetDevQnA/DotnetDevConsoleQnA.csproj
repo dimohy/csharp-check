@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Compile Remove="ConsoleMultiIntegerInput.cs" />
+    <Compile Remove="MultiTaskWaitTest.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="QueuePerformanceTest.cs" />
     <Compile Remove="RecursiveTest.cs" />
@@ -18,6 +19,7 @@
 
   <ItemGroup>
     <None Include="ConsoleMultiIntegerInput.cs" />
+    <None Include="MultiTaskWaitTest.cs" />
     <None Include="Program.cs" />
     <None Include="QueuePerformanceTest.cs" />
     <None Include="RecursiveTest.cs" />
