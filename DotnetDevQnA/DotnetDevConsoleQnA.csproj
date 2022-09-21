@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Compile Remove="ConsoleMultiIntegerInput.cs" />
+    <Compile Remove="ConvertInvalidFilename.cs" />
     <Compile Remove="MultiTaskWaitTest.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="QueuePerformanceTest.cs" />
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <None Include="ConsoleMultiIntegerInput.cs" />
+    <None Include="ConvertInvalidFilename.cs" />
     <None Include="MultiTaskWaitTest.cs" />
     <None Include="Program.cs" />
     <None Include="QueuePerformanceTest.cs" />
