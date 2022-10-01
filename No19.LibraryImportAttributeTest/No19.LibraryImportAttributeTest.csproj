@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+
+	  
+	  <PublishAot>true</PublishAot>
+	  <InvariantGlobalization>true</InvariantGlobalization>
+	  <UseSystemResourceKeys>true</UseSystemResourceKeys>
+
+	  <IlcOptimizationPreference>Size</IlcOptimizationPreference>
+	  <IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>
+
+	  <DebuggerSupport>false</DebuggerSupport>
+	  <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+	  <EventSourceSupport>false</EventSourceSupport>
+	  <HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>
+	  <MetadataUpdaterSupport>false</MetadataUpdaterSupport>
+	  
+	  
+
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkAssemblies Remove="msys-lz4-1.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PrivateSdkAssemblies Remove="msys-lz4-1.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="msys-lz4-1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
