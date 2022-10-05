@@ -1,11 +1,8 @@
 ﻿using System.Runtime.InteropServices;
 using System.Text;
 
-
 // TestBeep()
-
 TestLZ4Compress();
-
 
 
 static void TestBeep()
@@ -62,7 +59,6 @@ static partial class ExternDll
     [LibraryImport("Kernel32.dll")]
     [return: MarshalAs(UnmanagedType.Bool)]
     public static partial bool Beep(uint freq, uint duration);
-
 
     [LibraryImport("msys-lz4-1.dll")]
     public static partial int LZ4_compressBound(int inputSize);
