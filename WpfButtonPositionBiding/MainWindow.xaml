@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfButtonPositionBiding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfButtonPositionBiding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Canvas>
+        <Button Canvas.Left="{Binding ButtonX, Mode=OneWay}" Canvas.Top="{Binding ButtonY, Mode=OneWay}">이미지버튼</Button>
+        <Line Canvas.Left="200" Canvas.Top="200" X1="100" Y1="100" X2="200" Y2="200" Stroke="Red" />
+    </Canvas>
+</Window>
