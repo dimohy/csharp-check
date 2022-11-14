@@ -27,26 +27,8 @@ namespace MauiAppTabGesture
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
 
-        [RelayCommand]
-        private async void OnGesture()
-        {
-            if (cts is null)
-                cts = new CancellationTokenSource();
-            else
-                cts.Cancel();
-
-            await Task.Delay(1000, cts.Token);
-
-            OnCounterClicked(this, EventArgs.Empty);
-
-            cts.Dispose();
-            cts = null;
-        }
-
-
-        //[RelayCommand(AllowConcurrentExecutions = false)]
         //[RelayCommand]
-        //private async Task OnGestureAsync()
+        //private async void OnGesture()
         //{
         //    if (cts is null)
         //        cts = new CancellationTokenSource();
@@ -60,5 +42,23 @@ namespace MauiAppTabGesture
         //    cts.Dispose();
         //    cts = null;
         //}
+
+
+        //[RelayCommand(AllowConcurrentExecutions = false)]
+        [RelayCommand]
+        private async Task OnGestureAsync()
+        {
+            if (cts is null)
+                cts = new CancellationTokenSource();
+            else
+                cts.Cancel();
+
+            await Task.Delay(1000, cts.Token);
+
+            OnCounterClicked(this, EventArgs.Empty);
+
+            cts.Dispose();
+            cts = null;
+        }
     }
 }

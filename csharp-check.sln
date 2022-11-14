@@ -147,7 +147,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No21.CursedCSharp", "No21.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfButtonPositionBiding", "WpfButtonPositionBiding\WpfButtonPositionBiding.csproj", "{6BD1E594-AC0B-4C93-9FAA-1939D3BC72BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppTabGesture", "QnA\MauiAppTabGesture\MauiAppTabGesture.csproj", "{3761D774-544C-4A7F-A71E-E05644658175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiAppTabGesture", "QnA\MauiAppTabGesture\MauiAppTabGesture.csproj", "{3761D774-544C-4A7F-A71E-E05644658175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No20.QuicTest", "No20.QuicTest\No20.QuicTest.csproj", "{AC2297D8-338A-4D99-878A-324665F2CFE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1106,6 +1108,22 @@ Global
 		{3761D774-544C-4A7F-A71E-E05644658175}.Release|x86.ActiveCfg = Release|Any CPU
 		{3761D774-544C-4A7F-A71E-E05644658175}.Release|x86.Build.0 = Release|Any CPU
 		{3761D774-544C-4A7F-A71E-E05644658175}.Release|x86.Deploy.0 = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|arm64.Build.0 = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|x64.Build.0 = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Debug|x86.Build.0 = Debug|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|arm64.ActiveCfg = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|arm64.Build.0 = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|x64.ActiveCfg = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|x64.Build.0 = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC2297D8-338A-4D99-878A-324665F2CFE9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
