@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 
 using System.Windows;
+using System.Windows.Input;
 
 namespace WpfVariousCommandParameter;
 
@@ -20,6 +21,10 @@ public partial class MainWindow : Window
         InitializeComponent();
 
         DataContext = this;
+
+        //CommandManager.InvalidateRequerySuggested();
+
+        RelayCommand
     }
 
     [RelayCommand]

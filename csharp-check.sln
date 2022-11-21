@@ -157,7 +157,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationCheck", "WinForms
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsprojConditionDefineConstantsTest", "QnA\CsprojConditionDefineConstantsTest\CsprojConditionDefineConstantsTest.csproj", "{C176412F-9AC0-43E4-9528-E254E33D9762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfVariousCommandParameter", "QnA\WpfVariousCommandParameter\WpfVariousCommandParameter.csproj", "{A62E52E1-AC00-4C6E-9186-7E9D4676CF32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfVariousCommandParameter", "QnA\WpfVariousCommandParameter\WpfVariousCommandParameter.csproj", "{A62E52E1-AC00-4C6E-9186-7E9D4676CF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLoadingProgressMVVM", "QnA\WpfLoadingProgressMVVM\WpfLoadingProgressMVVM.csproj", "{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1196,6 +1198,22 @@ Global
 		{A62E52E1-AC00-4C6E-9186-7E9D4676CF32}.Release|x64.Build.0 = Release|Any CPU
 		{A62E52E1-AC00-4C6E-9186-7E9D4676CF32}.Release|x86.ActiveCfg = Release|Any CPU
 		{A62E52E1-AC00-4C6E-9186-7E9D4676CF32}.Release|x86.Build.0 = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|arm64.Build.0 = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|x64.Build.0 = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|arm64.ActiveCfg = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|arm64.Build.0 = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|x64.ActiveCfg = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|x64.Build.0 = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1252,6 +1270,7 @@ Global
 		{FA1FF784-3A3E-4F44-A4A9-CB0AE9E682FB} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 		{C176412F-9AC0-43E4-9528-E254E33D9762} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 		{A62E52E1-AC00-4C6E-9186-7E9D4676CF32} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
+		{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B} = {3B5B84BC-77A3-4B15-A4BA-9F41E465A282}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F28AB9AC-2191-49A1-AFC9-9C79CCDDD84C}
