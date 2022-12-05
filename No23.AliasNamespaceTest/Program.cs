@@ -18,3 +18,6 @@ NamespaceB::Test.Print();
 
 TestA.Print();
 TestB.Print();
+
+
+global::System.Console.WriteLine("Hello World!");
