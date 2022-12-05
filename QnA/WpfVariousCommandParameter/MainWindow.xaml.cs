@@ -24,7 +24,7 @@ public partial class MainWindow : Window
 
         //CommandManager.InvalidateRequerySuggested();
 
-        RelayCommand
+        //RelayCommand
     }
 
     [RelayCommand]
