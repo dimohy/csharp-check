@@ -38,26 +38,26 @@ namespace WpfResize
             source!.AddHook(WndProc);
         }
 
-        private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
-        {
-            const int WM_ENTERSIZEMOVE = 0x0231;
-            const int WM_EXITSIZEMOVE = 0x0232;
+private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+    const int WM_ENTERSIZEMOVE = 0x0231;
+    const int WM_EXITSIZEMOVE = 0x0232;
 
-            if (msg is WM_ENTERSIZEMOVE)
-            {
-                content.Width = content.ActualWidth;
-                content.Height = content.ActualHeight;
-                Debug.WriteLine("ENTER!");
-            }
-            else if (msg is WM_EXITSIZEMOVE)
-            {
-                content.Width = double.NaN;
-                content.Height = double.NaN;
+    if (msg is WM_ENTERSIZEMOVE)
+    {
+        content.Width = content.ActualWidth;
+        content.Height = content.ActualHeight;
+        Debug.WriteLine("ENTER!");
+    }
+    else if (msg is WM_EXITSIZEMOVE)
+    {
+        content.Width = double.NaN;
+        content.Height = double.NaN;
 
-                Debug.WriteLine("EXIT!");
-            }
+        Debug.WriteLine("EXIT!");
+    }
 
-            return IntPtr.Zero;
-        }
+    return IntPtr.Zero;
+}
     }
 }

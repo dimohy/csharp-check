@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BitFieldTest.cs" />
     <Compile Remove="ConsoleMultiIntegerInput.cs" />
     <Compile Remove="ConvertInvalidFilename.cs" />
     <Compile Remove="IAsyncEnumerableTest.cs" />
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="BitFieldTest.cs" />
     <None Include="ConsoleMultiIntegerInput.cs" />
     <None Include="ConvertInvalidFilename.cs" />
     <None Include="IAsyncEnumerableTest.cs" />
