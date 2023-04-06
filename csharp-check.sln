@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32203.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No1.GenericTypeAllowNull", "No1.GenericTypeAllowNull\No1.GenericTypeAllowNull.csproj", "{1F7F35D1-F5CE-4092-97C8-546E80A6C14C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N01.GenericTypeAllowNull", "N01.GenericTypeAllowNull\N01.GenericTypeAllowNull.csproj", "{1F7F35D1-F5CE-4092-97C8-546E80A6C14C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinForms", "WinForms", "{975AF992-8235-4474-ACC8-BB2D2A9E244B}"
 EndProject
@@ -41,7 +41,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Localizing", "4.Localizin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample", "WinForms\4.Localizing\sample\sample.csproj", "{D20B7269-37D7-4077-9CE9-DE9BD9B8AD70}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No2.CS11_Check", "No2.CS11_Check\No2.CS11_Check.csproj", "{F81D556F-A7C5-4597-AA17-33F4ECC0AE54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N02.CS11_Check", "N02.CS11_Check\N02.CS11_Check.csproj", "{F81D556F-A7C5-4597-AA17-33F4ECC0AE54}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Customizing", "5.Customizing", "{D7B69A69-B075-43AE-AB2D-18D55AEA3678}"
 EndProject
@@ -53,11 +53,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetDevConsoleQnA", "Dotn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.DataGridPerformance", "6.DataGridPerformance", "{A138CE6E-3CD5-4078-89CE-1EA4981AED76}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "No3.EnumGenerator", "No3.EnumGenerator", "{1679CD6A-3073-4839-B077-2E122489BD4B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N03.EnumGenerator", "N03.EnumGenerator", "{1679CD6A-3073-4839-B077-2E122489BD4B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dimohysm.AutoGen", "No3.EnumGenerator\Dimohysm.AutoGen\Dimohysm.AutoGen.csproj", "{8C3375F3-F0FC-4A68-84A8-60F888AD131B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dimohysm.AutoGen", "N03.EnumGenerator\Dimohysm.AutoGen\Dimohysm.AutoGen.csproj", "{8C3375F3-F0FC-4A68-84A8-60F888AD131B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dimohysm.AutoGen.Test", "No3.EnumGenerator\Dimohysm.AutoGen.Test\Dimohysm.AutoGen.Test.csproj", "{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dimohysm.AutoGen.Test", "N03.EnumGenerator\Dimohysm.AutoGen.Test\Dimohysm.AutoGen.Test.csproj", "{F884BF5D-9AB4-40AF-9D6A-8D11F86A4B4A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataGridPerformance", "WinForms\6. DataGridPerformance\DataGridPerformance\DataGridPerformance.csproj", "{5F0DE47F-41F6-474D-8999-76352A2FB434}"
 EndProject
@@ -65,21 +65,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetDevWinFormsQnA", "Dot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizBenchmark", "QuizBenchmark\QuizBenchmark.csproj", "{5A837C2F-E133-46CE-B30E-29E941F70979}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No4.TaskCompletionSource", "No4.TaskCompletionSource\No4.TaskCompletionSource.csproj", "{2D0B25F7-B3A4-423F-9115-E9F854DAF252}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N04.TaskCompletionSource", "N04.TaskCompletionSource\N04.TaskCompletionSource.csproj", "{2D0B25F7-B3A4-423F-9115-E9F854DAF252}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No5.StringBuilderHelper", "No5.StringBuilderHelper\No5.StringBuilderHelper.csproj", "{949A463D-A30B-4996-B526-8BDCAE43858E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N05.StringBuilderHelper", "N05.StringBuilderHelper\N05.StringBuilderHelper.csproj", "{949A463D-A30B-4996-B526-8BDCAE43858E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfFileDownloader", "QnA\WpfFileDownloader\WpfFileDownloader.csproj", "{ACD1C500-FF39-41C9-8FF7-600549D9443B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FontFamily", "QnA\FontFamily\FontFamily.csproj", "{BDEEA9CC-323E-4247-947D-B5DA504EF2B0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No6.Stowage", "No6.Stowage\No6.Stowage.csproj", "{54BF58D0-8966-4BDC-B473-82F53D09B7BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N06.Stowage", "N06.Stowage\N06.Stowage.csproj", "{54BF58D0-8966-4BDC-B473-82F53D09B7BA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfKeyDownEventMVVM", "QnA\WpfKeyDownEventMVVM\WpfKeyDownEventMVVM.csproj", "{A07F983B-3722-4794-BD7A-7E44ADE18373}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No7.ComposableDelegate", "No7.ComposableDelegate\No7.ComposableDelegate.csproj", "{6D601533-C855-47BD-8FE0-B0E22CEAD99E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N07.ComposableDelegate", "N07.ComposableDelegate\N07.ComposableDelegate.csproj", "{6D601533-C855-47BD-8FE0-B0E22CEAD99E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No8.WinUI3PhotoViewer", "No8.WinUI3PhotoViewer\No8.WinUI3PhotoViewer.csproj", "{B4F1AF23-AED0-4B5A-8032-1C4EF6C82505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N08.WinUI3PhotoViewer", "N08.WinUI3PhotoViewer\N08.WinUI3PhotoViewer.csproj", "{B4F1AF23-AED0-4B5A-8032-1C4EF6C82505}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserPage", "QnA\UserPage\UserPage.csproj", "{9A3C1832-3E97-48E8-A835-2DCD745FDC4C}"
 EndProject
@@ -89,69 +89,69 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinUI3UnpackagedWinProcTest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfTabItemHidden", "QnA\WpfTabItemHidden\WpfTabItemHidden.csproj", "{D0B2E649-7365-4C16-8025-107D507A32D5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "No9.CSharpCodeRunner", "No9.CSharpCodeRunner", "{7C9E9F16-C3C3-4C43-82DC-E456B42C6943}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N09.CSharpCodeRunner", "N09.CSharpCodeRunner", "{7C9E9F16-C3C3-4C43-82DC-E456B42C6943}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No9.CSharpCodeRunner.Client", "No9.CSharpCodeRunner\Client\No9.CSharpCodeRunner.Client.csproj", "{946596C6-4C6B-4FCD-81E9-B7F4BDBB1B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N09.CSharpCodeRunner.Client", "N09.CSharpCodeRunner\Client\N09.CSharpCodeRunner.Client.csproj", "{946596C6-4C6B-4FCD-81E9-B7F4BDBB1B9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No9.CSharpCodeRunner.Server", "No9.CSharpCodeRunner\Server\No9.CSharpCodeRunner.Server.csproj", "{F8D89726-71BE-4A28-9E4E-F4DA4D61B63D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N09.CSharpCodeRunner.Server", "N09.CSharpCodeRunner\Server\N09.CSharpCodeRunner.Server.csproj", "{F8D89726-71BE-4A28-9E4E-F4DA4D61B63D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No9.CSharpCodeRunner.Shared", "No9.CSharpCodeRunner\Shared\No9.CSharpCodeRunner.Shared.csproj", "{0FC666F7-1C50-4174-B438-3763EF7FADB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N09.CSharpCodeRunner.Shared", "N09.CSharpCodeRunner\Shared\N09.CSharpCodeRunner.Shared.csproj", "{0FC666F7-1C50-4174-B438-3763EF7FADB8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSelectedTwoFilter", "QnA\WpfSelectedTwoFilter\WpfSelectedTwoFilter.csproj", "{5D5C64E2-1930-4206-AB11-15438C4D1735}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No10.MQTTnetTest", "No10.MQTTnetTest\No10.MQTTnetTest.csproj", "{E9A38FBF-EBC2-4DDD-BCC6-B361731F1E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N10.MQTTnetTest", "N10.MQTTnetTest\N10.MQTTnetTest.csproj", "{E9A38FBF-EBC2-4DDD-BCC6-B361731F1E76}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCaptureScreen", "QnA\WpfCaptureScreen\WpfCaptureScreen.csproj", "{B924575F-4181-451A-81DB-FFA7AA9FC194}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsMouseCapture", "QnA\WinFormsMouseCapture\WinFormsMouseCapture.csproj", "{71B412D9-C88A-42D7-BF7C-43E79600F1C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No11.ExpandoObject", "No11.ExpandoObject\No11.ExpandoObject.csproj", "{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N11.ExpandoObject", "N11.ExpandoObject\N11.ExpandoObject.csproj", "{E5F03A61-CCB3-4CA2-B8B4-43ABCBA618E6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No12.WpfBindingExpandoObject", "No12.WpfBindingExpandoObject\No12.WpfBindingExpandoObject.csproj", "{B850E774-2C4B-4AF0-889D-C12614B354D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N12.WpfBindingExpandoObject", "N12.WpfBindingExpandoObject\N12.WpfBindingExpandoObject.csproj", "{B850E774-2C4B-4AF0-889D-C12614B354D7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfComboBoxBinding", "QnA\WpfComboBoxBinding\WpfComboBoxBinding.csproj", "{DC9A1CF7-914D-4ABC-BBC1-ED21570F61D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No13.DisposeIEnumerator", "No13.DisposeIEnumerator\No13.DisposeIEnumerator.csproj", "{76F43500-2664-405F-88C6-87662EEE7A16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N13.DisposeIEnumerator", "N13.DisposeIEnumerator\N13.DisposeIEnumerator.csproj", "{76F43500-2664-405F-88C6-87662EEE7A16}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "No14.ProcessInOut", "No14.ProcessInOut", "{EBEEF3A6-42B9-4F2E-8628-5A6FEF1184E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N14.ProcessInOut", "N14.ProcessInOut", "{EBEEF3A6-42B9-4F2E-8628-5A6FEF1184E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messenger", "No14.ProcessInOut\Messenger\Messenger.csproj", "{1A94881B-AB3C-4147-A077-D5CF798E6B3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messenger", "N14.ProcessInOut\Messenger\Messenger.csproj", "{1A94881B-AB3C-4147-A077-D5CF798E6B3E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No14.FileDisposeTest", "No14.FileDisposeTest\No14.FileDisposeTest.csproj", "{A5590A36-14D9-41B3-B230-8C9BAA118C97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N14.FileDisposeTest", "N14.FileDisposeTest\N14.FileDisposeTest.csproj", "{A5590A36-14D9-41B3-B230-8C9BAA118C97}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfPopupToggleUsingXAML", "QnA\WpfPopupToggleUsingXAML\WpfPopupToggleUsingXAML.csproj", "{CC15EB82-82B1-426F-A6D2-AB987D5B0A4B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "No15.HybridBlazor", "No15.HybridBlazor", "{D915DA48-700E-44EF-8151-281DB5C7094C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N15.HybridBlazor", "N15.HybridBlazor", "{D915DA48-700E-44EF-8151-281DB5C7094C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Server", "No15.HybridBlazor\BlazorApp1\Server\BlazorApp1.Server.csproj", "{A6191DC4-D8F6-4AB1-95D1-C4181BBFCDB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Server", "N15.HybridBlazor\BlazorApp1\Server\BlazorApp1.Server.csproj", "{A6191DC4-D8F6-4AB1-95D1-C4181BBFCDB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Client", "No15.HybridBlazor\BlazorApp1\Client\BlazorApp1.Client.csproj", "{D07E96FF-BAE3-4652-9003-734507F4EF71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Client", "N15.HybridBlazor\BlazorApp1\Client\BlazorApp1.Client.csproj", "{D07E96FF-BAE3-4652-9003-734507F4EF71}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Shared", "No15.HybridBlazor\BlazorApp1\Shared\BlazorApp1.Shared.csproj", "{C6C4A103-3C10-4A80-9099-9DBD88CC22EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1.Shared", "N15.HybridBlazor\BlazorApp1\Shared\BlazorApp1.Shared.csproj", "{C6C4A103-3C10-4A80-9099-9DBD88CC22EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No16.BaseDirectory", "No16.BaseDirectory\No16.BaseDirectory.csproj", "{FA902C1D-CB8F-4B8D-8A7C-A78437975160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N16.BaseDirectory", "N16.BaseDirectory\N16.BaseDirectory.csproj", "{FA902C1D-CB8F-4B8D-8A7C-A78437975160}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No17.HiddenGen", "No17.HiddenGen\No17.HiddenGen.csproj", "{93E0FDA2-A91A-4673-8586-E1BEF1B58364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N17.HiddenGen", "N17.HiddenGen\N17.HiddenGen.csproj", "{93E0FDA2-A91A-4673-8586-E1BEF1B58364}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfChangedEventBinding", "QnA\WpfChangedEventBinding\WpfChangedEventBinding.csproj", "{11C56EFD-8574-4FEA-976D-35D66E2CAB26}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No18.DefaultInterfaceMethods", "No18.DefaultInterfaceMethods\No18.DefaultInterfaceMethods.csproj", "{91DFDF57-0825-4409-A49A-768AE03C0BC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N18.DefaultInterfaceMethods", "N18.DefaultInterfaceMethods\N18.DefaultInterfaceMethods.csproj", "{91DFDF57-0825-4409-A49A-768AE03C0BC0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No19.LibraryImportAttributeTest", "No19.LibraryImportAttributeTest\No19.LibraryImportAttributeTest.csproj", "{CFF9C094-0247-40A9-BF1D-991BE2F8BF8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N19.LibraryImportAttributeTest", "N19.LibraryImportAttributeTest\N19.LibraryImportAttributeTest.csproj", "{CFF9C094-0247-40A9-BF1D-991BE2F8BF8C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No20.PrintASCIITable", "No20.PrintASCIITable\No20.PrintASCIITable.csproj", "{DB44C53F-B899-4CEB-877A-A2EF73EA9589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N20.PrintASCIITable", "N20.PrintASCIITable\N20.PrintASCIITable.csproj", "{DB44C53F-B899-4CEB-877A-A2EF73EA9589}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDataBinding", "QnA\WpfDataBinding\WpfDataBinding.csproj", "{E29C6E0F-4808-4A7E-9664-9C0C0D58FC2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No21.CursedCSharp", "No21.CursedCSharp\No21.CursedCSharp.csproj", "{7375A065-01FF-49AA-B256-ADAD0E13B097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N21.CursedCSharp", "N21.CursedCSharp\N21.CursedCSharp.csproj", "{7375A065-01FF-49AA-B256-ADAD0E13B097}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfButtonPositionBiding", "WpfButtonPositionBiding\WpfButtonPositionBiding.csproj", "{6BD1E594-AC0B-4C93-9FAA-1939D3BC72BB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiAppTabGesture", "QnA\MauiAppTabGesture\MauiAppTabGesture.csproj", "{3761D774-544C-4A7F-A71E-E05644658175}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No20.QuicTest", "No20.QuicTest\No20.QuicTest.csproj", "{AC2297D8-338A-4D99-878A-324665F2CFE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N20.QuicTest", "N20.QuicTest\N20.QuicTest.csproj", "{AC2297D8-338A-4D99-878A-324665F2CFE9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No22.NeatCreation", "No22.NeatCreation\No22.NeatCreation.csproj", "{2AC96250-8C21-4704-B2AD-DBB51F9B9F52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N22.NeatCreation", "N22.NeatCreation\N22.NeatCreation.csproj", "{2AC96250-8C21-4704-B2AD-DBB51F9B9F52}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationCheck", "WinFormsApp1\ValidationCheck.csproj", "{FA1FF784-3A3E-4F44-A4A9-CB0AE9E682FB}"
 EndProject
@@ -161,9 +161,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfVariousCommandParameter"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLoadingProgressMVVM", "QnA\WpfLoadingProgressMVVM\WpfLoadingProgressMVVM.csproj", "{1D1DA0F6-C76B-4F9F-A426-2A4BC157963B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No23.AliasNamespaceTest", "No23.AliasNamespaceTest\No23.AliasNamespaceTest.csproj", "{EF78D47C-2D56-4837-8E24-60AD95A0503E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N23.AliasNamespaceTest", "N23.AliasNamespaceTest\N23.AliasNamespaceTest.csproj", "{EF78D47C-2D56-4837-8E24-60AD95A0503E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "No24.MemoryPackTest", "No24.MemoryPackTest\No24.MemoryPackTest.csproj", "{1632B75B-D867-4C1F-BD83-1C22E2B26C98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N24.MemoryPackTest", "N24.MemoryPackTest\N24.MemoryPackTest.csproj", "{1632B75B-D867-4C1F-BD83-1C22E2B26C98}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormDisplay", "QnA\WinFormDisplay\WinFormDisplay\WinFormDisplay.csproj", "{AB4D5AA7-2EE5-4F79-BC2B-83739056B1D3}"
 EndProject
@@ -173,7 +173,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfTrigger", "QnA\WpfTrigge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfResize", "QnA\WpfResize\WpfResize.csproj", "{F72F44A6-AEFA-4768-B6C0-56797C78CA42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No25.IsUseful", "No25.IsUseful\No25.IsUseful.csproj", "{FD53B2DB-9A68-46BD-8C44-93B17425CF40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N25.IsUseful", "N25.IsUseful\N25.IsUseful.csproj", "{FD53B2DB-9A68-46BD-8C44-93B17425CF40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N26.Result", "N26.Result\N26.Result.csproj", "{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N27.JsonCodegen", "N27.JsonCodegen\N27.JsonCodegen.csproj", "{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N27.RefDelegate", "N27.RefDelegate\N27.RefDelegate.csproj", "{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N28.OCPFactory", "N28.OCPFactory\N28.OCPFactory.csproj", "{9842EA37-F062-4E42-A674-3D885C2F9B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1340,6 +1348,70 @@ Global
 		{FD53B2DB-9A68-46BD-8C44-93B17425CF40}.Release|x64.Build.0 = Release|Any CPU
 		{FD53B2DB-9A68-46BD-8C44-93B17425CF40}.Release|x86.ActiveCfg = Release|Any CPU
 		{FD53B2DB-9A68-46BD-8C44-93B17425CF40}.Release|x86.Build.0 = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|arm64.Build.0 = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|x64.Build.0 = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Debug|x86.Build.0 = Debug|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|arm64.ActiveCfg = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|arm64.Build.0 = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|x64.ActiveCfg = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|x64.Build.0 = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA6E9C8D-359C-4625-8154-7DD2D00B3AA6}.Release|x86.Build.0 = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|arm64.Build.0 = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|x64.Build.0 = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Debug|x86.Build.0 = Debug|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|arm64.ActiveCfg = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|arm64.Build.0 = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|x64.ActiveCfg = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|x64.Build.0 = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|x86.ActiveCfg = Release|Any CPU
+		{8D3B3AE3-FAEF-4BB8-B660-E370EEB81185}.Release|x86.Build.0 = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|arm64.Build.0 = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|x64.Build.0 = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Debug|x86.Build.0 = Debug|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|arm64.ActiveCfg = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|arm64.Build.0 = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|x64.ActiveCfg = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|x64.Build.0 = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|x86.ActiveCfg = Release|Any CPU
+		{DB8EEB87-3760-4EAF-87DA-BE549360EE2C}.Release|x86.Build.0 = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|arm64.Build.0 = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|x64.Build.0 = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Debug|x86.Build.0 = Debug|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|arm64.ActiveCfg = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|arm64.Build.0 = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|x64.ActiveCfg = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|x64.Build.0 = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|x86.ActiveCfg = Release|Any CPU
+		{9842EA37-F062-4E42-A674-3D885C2F9B89}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
