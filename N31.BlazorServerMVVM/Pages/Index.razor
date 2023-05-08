@@ -1,0 +1,27 @@
+﻿@inherits ViewModelComponent<IndexViewModel>
+
+@page "/"
+
+@using N31.BlazorServerMVVM.Base;
+@using N31.BlazorServerMVVM.ViewModels;
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<h2>@ViewModel.Count</h2>
+
+<div>
+    <button disabled="@ViewModel.CountCommand.IsRunning" @onclick="() => ViewModel.CountCommand.ExecuteAsync(null)">Click!</button>
+    <button disabled="@(!ViewModel.CountCommand.CanBeCanceled)" @onclick="@ViewModel.CountCommand.Cancel">Cancel</button>
+</div>
+
+<div>
+    <input disabled="@ViewModel.CountCommand.IsRunning" @bind="@ViewModel.InputCount" @bind:event="oninput" />
+    <input disabled="@ViewModel.CountCommand.IsRunning" @bind="@ViewModel.InputCount" @bind:event="oninput" />
+</div>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+

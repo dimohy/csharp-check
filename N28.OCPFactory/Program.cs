@@ -12,9 +12,9 @@ Animal.AddCreator(new AnimalCreator<Pig>());
 //var cat = Animal.Create(2);
 //var pig = Animal.Create(3);
 
-var dog = Animal.Create(Dog.ConstType);
-var cat = Animal.Create(Cat.ConstType);
-var pig = Animal.Create(Pig.ConstType);
+var dog = Animal.Create(Dog.AnimalType);
+var cat = Animal.Create(Cat.AnimalType);
+var pig = Animal.Create(Pig.AnimalType);
 
 Console.WriteLine(dog.Name);
 Console.WriteLine(cat.Name);
@@ -68,14 +68,14 @@ interface IAnimalCreator
 class AnimalCreator<TAnimal> : IAnimalCreator
     where TAnimal : Animal, IHaveType, new()
 {
-    public int Type => TAnimal.ConstType;
+    public int Type => TAnimal.AnimalType;
     
     public Animal Create() => new TAnimal();
 }
 
 interface IHaveType
 {
-    static abstract int ConstType { get; }
+    static abstract int AnimalType { get; }
 }
 
 /// <summary>
@@ -83,9 +83,9 @@ interface IHaveType
 /// </summary>
 class Dog : Animal, IHaveType
 {
-    public static int ConstType => 1;
+    public static int AnimalType => 1;
 
-    public override int Type => ConstType;
+    public override int Type => AnimalType;
 
     public override string Name => "Dog";
 }
@@ -95,9 +95,9 @@ class Dog : Animal, IHaveType
 /// </summary>
 class Cat : Animal, IHaveType
 {
-    public static int ConstType => 2;
+    public static int AnimalType => 2;
 
-    public override int Type => ConstType;
+    public override int Type => AnimalType;
 
     public override string Name => "Cat";
 }
@@ -107,9 +107,9 @@ class Cat : Animal, IHaveType
 /// </summary>
 class Pig : Animal, IHaveType
 {
-    public static int ConstType => 3;
+    public static int AnimalType => 3;
 
-    public override int Type => ConstType;
+    public override int Type => AnimalType;
 
     public override string Name => "Pig";
 }
