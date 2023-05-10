@@ -1,0 +1,44 @@
+﻿@using CommunityToolkit.Mvvm.Input;
+@using System.Windows.Input;
+
+<button disabled="@IsDisabled" @onclick="OnClickAsync">@ChildContent</button>
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public ICommand? Command { get; set; }
+
+    [Parameter]
+    public object? CommandParameter { get; set; }
+
+
+    private bool IsDisabled
+    {
+        get
+        {
+            if (Command is null)
+                return true;
+
+            if (Command is IAsyncRelayCommand asyncRelayCommand)
+                return asyncRelayCommand.IsRunning && asyncRelayCommand.CanExecute(CommandParameter) is false;
+
+            return Command.CanExecute(CommandParameter) is false;
+        }
+    }
+
+    private Task OnClickAsync()
+    {
+        if (Command is null)
+            return Task.CompletedTask;
+
+        if (Command is IAsyncRelayCommand asyncRelayCommand)
+        {
+            return asyncRelayCommand.ExecuteAsync(CommandParameter);
+        }
+
+        Command.Execute(CommandParameter);
+        return Task.CompletedTask;
+    }
+}

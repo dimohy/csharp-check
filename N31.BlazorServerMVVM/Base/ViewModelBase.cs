@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 using System.ComponentModel;
 
@@ -12,6 +13,23 @@ public abstract class ViewModelBase : ObservableObject, IStateHasChanged
     {
         base.OnPropertyChanged(e);
 
-        (this as IStateHasChanged).StateHasChanged();
+        StateHasChanged();
+    }
+
+    protected void StateHasChanged() => (this as IStateHasChanged).StateHasChanged();
+
+    protected void StartAsyncCommand(IAsyncRelayCommand asyncRelayCommand)
+    {
+        asyncRelayCommand.PropertyChanged += AsyncRelayCommand_PropertyChanged;
+
+        void AsyncRelayCommand_PropertyChanged(object? sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName is nameof(IAsyncRelayCommand.IsRunning) && asyncRelayCommand.IsRunning is false)
+            {
+                StateHasChanged();
+
+                asyncRelayCommand.PropertyChanged -= AsyncRelayCommand_PropertyChanged;
+            }
+        }
     }
 }

@@ -3,8 +3,6 @@ using CommunityToolkit.Mvvm.Input;
 
 using N31.BlazorServerMVVM.Base;
 
-using System.ComponentModel;
-
 namespace N31.BlazorServerMVVM.ViewModels;
 
 public partial class IndexViewModel : ViewModelBase
@@ -12,9 +10,15 @@ public partial class IndexViewModel : ViewModelBase
     [ObservableProperty] private int _count;
     [ObservableProperty] private int _inputCount = 200;
 
-    [RelayCommand]
+
+    [ObservableProperty] private bool _refresh;
+
+
+    [RelayCommand(IncludeCancelCommand = true)]
     public async Task OnCountAsync(CancellationToken ct)
     {
+        StartAsyncCommand(CountCommand);
+
         try
         {
             for (var i = 0; i < InputCount; i++)

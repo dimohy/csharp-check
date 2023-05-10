@@ -1,9 +1,9 @@
 ﻿@inherits ViewModelComponent<IndexViewModel>
+@using N31.BlazorServerMVVM.Base;
+@using N31.BlazorServerMVVM.Components
+@using N31.BlazorServerMVVM.ViewModels;
 
 @page "/"
-
-@using N31.BlazorServerMVVM.Base;
-@using N31.BlazorServerMVVM.ViewModels;
 
 <PageTitle>Index</PageTitle>
 
@@ -14,8 +14,17 @@ Welcome to your new app.
 <h2>@ViewModel.Count</h2>
 
 <div>
-    <button disabled="@ViewModel.CountCommand.IsRunning" @onclick="() => ViewModel.CountCommand.ExecuteAsync(null)">Click!</button>
-    <button disabled="@(!ViewModel.CountCommand.CanBeCanceled)" @onclick="@ViewModel.CountCommand.Cancel">Cancel</button>
+    <Button Command="@ViewModel.CountCommand">Click!</Button>
+    @*<button disabled="@ViewModel.CountCommand.IsRunning" @onclick="() => ViewModel.CountCommand.ExecuteAsync(null)">Click!</button>*@
+</div>
+
+<div>
+    <Button Command="@ViewModel.CountCancelCommand">Cancel</Button>
+    @*<button disabled="@(!ViewModel.CountCommand.CanBeCanceled)" @onclick="@ViewModel.CountCommand.Cancel">Cancel</button>*@
+</div>
+
+<div>
+    <button @onclick="() => StateHasChanged()">refresh</button>
 </div>
 
 <div>
