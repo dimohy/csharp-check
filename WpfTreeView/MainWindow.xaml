@@ -1,0 +1,26 @@
+﻿<Window
+    x:Class="WpfTreeView.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfTreeView"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+
+    <TreeView ItemsSource="{Binding Root.Groups}">
+        <TreeView.Resources>
+            <HierarchicalDataTemplate DataType="{x:Type local:Group}" ItemsSource="{Binding Children}">
+                <TextBlock Foreground="Green" Text="{Binding Name}" />
+            </HierarchicalDataTemplate>
+            <HierarchicalDataTemplate DataType="{x:Type local:Process}" ItemsSource="{Binding Items}">
+                <TextBlock Foreground="Red" Text="{Binding Name}" />
+            </HierarchicalDataTemplate>
+            <HierarchicalDataTemplate DataType="{x:Type local:Item}">
+                <TextBlock Foreground="Chocolate" Text="{Binding Name}" />
+            </HierarchicalDataTemplate>
+        </TreeView.Resources>
+    </TreeView>
+</Window>

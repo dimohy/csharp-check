@@ -14,7 +14,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Shared\No9.CSharpCodeRunner.Shared.csproj" />
+	  <ProjectReference Include="..\Shared\N09.CSharpCodeRunner.Shared.csproj" />
 	</ItemGroup>
 
 </Project>

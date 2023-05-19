@@ -11,8 +11,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Client\No9.CSharpCodeRunner.Client.csproj" />
-		<ProjectReference Include="..\Shared\No9.CSharpCodeRunner.Shared.csproj" />
+	  <ProjectReference Include="..\Client\N09.CSharpCodeRunner.Client.csproj" />
+	  <ProjectReference Include="..\Shared\N09.CSharpCodeRunner.Shared.csproj" />
 	</ItemGroup>
 
 

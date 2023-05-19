@@ -1,5 +1,6 @@
 ﻿using MemoryPack;
 
+Console.WriteLine("!");
 
 
 

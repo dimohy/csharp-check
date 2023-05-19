@@ -1,10 +1,10 @@
 namespace WinFormDisplay
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private List<Label>[] _labels;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
 
